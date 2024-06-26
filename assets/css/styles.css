@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+
+:root {
+    --color-blue-50: #1B57A6;
+    --color-blue-100: #1D4273;
+    --color-blue-900: #243040;
+    --color-dark: #262626;
+    --color-hover: #737373;
+    --color-light: #F2F2F2;
+}
+
+body {
+    background-color: var(--color-light);
+    font-family: "Space Grotesk", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.cabecalho-logo {
+    width: 15%;
+}
+
+.cabecalho-logo-img {
+    width: 100%;
+}
+
+.cabecalho-logo-texto {
+    width: 70%;
+
+}
+
+.logo-nome {
+    font-size: 1em;
+}
+
+.logo-texto {
+    font-size: 0.7em;
+}
+
+.cabecalho-botao {
+    display: flex;
+    flex-direction: column;
+    gap: 0.02em;
+    transition: 0.3s;
+}
+
+
+
+
+.cabecalho-botao-span {
+    display: block;
+    width: 1.6em;
+    height: 0.10em;
+    background: var(--color-dark);
+    margin: 2px;
+    padding: 0.07em;
+
+}
+
+.cabecalho-menu {
+    position: fixed;
+    top: -200%;
+    width: 100%;
+    height: 100%;
+    background: var(--color-light);
+    transition: 0.3s;
+
+}
+
+.menu-nav-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin-top: 100%;
+}
+
+.menu-nav-lista-itens {
+    font-size: 2em;
+    text-decoration: none;
+    color: var(--color-dark);
+    padding: 4%;
+    transition-property: color;
+}
+
+.menu-nav-lista-itens:hover {
+    color: var(--color-blue-50);
+    transition-duration: 0.2s;
+}
+
+.primeiro {
+    color: var(--color-blue-50);
+
+}
+
+
+.aparecer {
+    top: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    height: 100%;
+
+}
+
+.aparecer-botao {
+    right: 0;
+    position: fixed;
+    z-index: 999;
+
+    .cabecalho-botao-span:nth-child(3) {
+        transform: translateY(-0.5em) rotate(-45deg);
+        transition: 0.3s;
+    }
+
+    .cabecalho-botao-span:nth-child(2) {
+        opacity: 0;
+        transition: 0.3s;
+    }
+
+    .cabecalho-botao-span:nth-child(1) {
+        transform: translateY(0.5em) rotate(45deg);
+        transition: 0.3s;
+    }
+}
+
+.inicio-img {
+    width: 100%;
+}
+
+main {
+    padding: 10% 5%;
+
+}
+
+.inicio {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    width: 100%;
+    ;
+    gap: 0.5em;
+}
+
+.subtitulo {
+    font-weight: 450;
+    justify-content: left;
+    font-size: 1.3rem;
+    margin-top: 1em;
+}
+
+.titulo-menor {
+    font-weight: 400;
+    justify-content: left;
+    font-size: 1.7rem;
+}
+
+.paragrafos {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.0em;
+    background: linear-gradient(to bottom, #cccccc, rgb(227, 224, 224));
+    border-radius: 10% 10% 0 0;
+    padding: 1.2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.bt {
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    padding: 0.7em 1.3em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.bt:hover {
+    background-color: var(--color-hover);
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    padding: 1.2em;
+    background-color: var(--color-blue-50);
+}
+
+.texto2 {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.cards {
+    width: 100%;
+    gap: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img {
+    width: 50%;
+    height: 90%;
+    border-radius: 6%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+    margin-top: 0.9em;
+}
+
+.criatividade,
+.criatividade-texto {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1em;
+}
+
+.planos {
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.0em;
+    background: linear-gradient(to bottom, #cccccc, rgb(227, 224, 224));
+    border-radius: 10% 10% 0 0;
+    padding: 1.2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bt-2 {
+    width: 30%;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    padding: 0.7em 1.3em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.bt-2:hover {
+    background-color: var(--color-hover);
+}
+
+.planos-card {
+    display: flex;
+    color: var(--color-light);
+    flex-direction: column;
+    background: var(--color-blue-900);
+    padding: 1.2em;
+}
+
+.planos-card .planos-card-titulo {
+    margin-bottom: 5%;
+}
+
+.planos-card .cifrao {
+    font-size: 0.7rem;
+    display: inline-block;
+    line-height: 1;
+    vertical-align: top;
+}
+
+.planos-card .preco-card {
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+.planos-card .span-card {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.7rem;
+    gap: 1.2em;
+    margin-bottom: 5%;
+}
+
+.planos-beneficios {
+    background: linear-gradient(to bottom, #cccccc, rgb(227, 224, 224));
+    border-radius: 0 0 10% 10%;
+    padding: 3em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--color-blue-900);
+}
+
+.planos-beneficios .beneficios{
+    display: flex;
+    flex-direction: column;
+    gap: 1.7em;
+   
+
+}
+
+.planos-beneficios .beneficios span {
+    display: flex;
+    text-align: center;
+    align-items: start;
+    gap: 0.8em;
+}
+
+
+
+
+.turbinar {
+    margin-top: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5em;
+    text-align: center;
+    
+}
+
+
+
+
+
+
+.turbinar-img {
+    width: 100%;
+
+}
+
+
+
+
+.rodape {
+    background-color: var(--color-blue-50);
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.rodape-posicionamento {
+    display: flex;
+    align-items: center;
+}
+
+.rodape-texto {
+    display: flex;
+    flex-direction: column;
+}
+
+.rodape-img-logo {
+    width: 2em;
+    align-items: center;
+    
+}
+
+
+
+
+
+.sobre {
+    margin-top: 4%;
+    font-weight: bold;
+    
+
+}
+
+.contato-endereco {
+    font-size: 0.8rem;
+    
+    margin-top: 4%;
+}
+
+.siga {
+   margin-top: 4%;
+}
+
+.links {
+    margin-top: 5%;
+    gap: 2.7em;
+    display: flex;
+    justify-content: center;
+}
+
+.texto3 {
+    font-weight: bold;
+    
+}
+
+.copy {
+   width: 100%;
+   background-color: var(--color-blue-900);
+   margin: 0;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+}
+.copytext {
+    color: var(--color-light);
+}
