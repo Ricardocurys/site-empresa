@@ -33,26 +33,28 @@
         <div class="cabecalho-menu">
             <nav class="cabecalho-menu-nav">
                 <ul class="menu-nav-lista">
-                    <li><a href="" class="menu-nav-lista-itens primeiro">Inicio</a></li>
-                    <li><a href="" class="menu-nav-lista-itens">Produto</a></li>
-                    <li><a href="" class="menu-nav-lista-itens">Planos</a></li>
-                    <li><a href="" class="menu-nav-lista-itens">Contato</a></li>
+                    <li><a href="#inicio" class="menu-nav-lista-itens primeiro">Inicio</a></li>
+                    <li><a href="#cards" class="menu-nav-lista-itens" >Produto</a></li>
+                    <li><a href="#planos" class="menu-nav-lista-itens">Planos</a></li>
+                    <li><a href="#rodape" class="menu-nav-lista-itens">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <div class="inicio">
+        <div class="inicio" id="inicio">
             <img src="./assets/imgs/img-principal.svg" alt="" class="inicio-img">
             <span class="titulo-menor">Comunique.</span>
             <span class="titulo-menor">Colabore. Crie.</span>
             <span class="paragrafos">Chronos Tech oferece um jeito eficaz de gerenciar seus projetos</span>
             <div class="info">
-                <span> <i class="fa-solid fa-shield-halved"></i> Velocidade e segurança</span>
-                <span> <i class="fa-solid fa-window-restore"></i> Flexibilidade e bora bill</span>
-                <span> <i class="fa-solid fa-laptop-code"></i> Riscado</span>
-                <a href="#" class="bt">Começar</a>
+                <span class="info-texto"> <i class="fa-solid fa-shield-halved"></i> Velocidade e segurança</span>
+                <span  class="info-texto"> <i class="fa-solid fa-window-restore"></i> Flexibilidade e bora bill</span>
+                <span  class="info-texto"> <i class="fa-solid fa-laptop-code"></i> Riscado</span>
+                <div class="div-bt">
+                    <a href="#" class="bt maior">Começar</a>
+                </div>    
             </div>
 
         </div>
@@ -71,7 +73,7 @@
                 "Editar texto" ou clicar duas vezes sobre mim para editar o conteúdo, a fonte e mais.</span>
 
         </div>
-        <div class="cards">
+        <div class="cards" id="cards">
             <div class="card1 card">
                 <div class="cards-img">
                     <img src="./assets/imgs/card2.svg" alt="" class="card-img">
@@ -147,7 +149,7 @@
 
         </section>
 
-        <section class="planos-card">
+        <section class="planos-card" id="planos-card">
             <div class="planos-card-titulo">
                 <span class="titulo-menor">Premium</span>
             </div>
@@ -160,9 +162,9 @@
                 <span>Use esta área para descrever um de seus planos</span>
                 <span>Válido por 12 meses</span>
             </div>
-            
-            <a href="#" class="bt">Benefícios</a>
-            
+            <div class="div-bt-beneficios">
+                <a href="#" class="bt maior">Benefícios</a>
+            </div>
         </section>
 
         <section class="planos-beneficios">
@@ -196,7 +198,7 @@
     </main>
 
     </main>
-    <footer class="rodape">
+    <footer class="rodape" id="rodape">
         <div class="rodape-posicionamento">
             <div class="rodape-logo">
                 <h1><a href=""><img src="./assets/imgs/logo.png" alt="" class="rodape-img-logo"></a></h1>
