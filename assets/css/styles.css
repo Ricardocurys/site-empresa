@@ -321,9 +321,17 @@ main {
     gap: 0.8em;
 }
 
+.inicio-img,.titulo-menor,
+.paragrafos,.subtitulo,
+.turbinar-img, .rodape,
+.copy,.info,
+.planos-card,.planos-beneficios{
+    visibility: hidden;
+}
 
-
-
+.card1, .card2, .card3, .card4{
+    visibility: hidden;
+}
 .turbinar {
     margin-top: 10%;
     width: 100%;
