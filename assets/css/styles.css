@@ -22,7 +22,6 @@ body {
     width: 100%;
     justify-content: space-around;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-
 }
 
 .cabecalho-logo {
@@ -150,8 +149,8 @@ body {
 }
 
 main {
-    padding: 10% 5%;
-
+    padding: 10% 4%;
+    overflow: hidden;
 }
 
 .inicio {
@@ -159,15 +158,22 @@ main {
     flex-direction: column;
     text-align: start;
     width: 100%;
-    ;
     gap: 0.5em;
+}
+
+.inicio-texto {
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+
 }
 
 .subtitulo {
     font-weight: 450;
     justify-content: left;
     font-size: 1.3rem;
-    margin-top: 1em;
+    
 }
 
 .titulo-menor {
@@ -195,7 +201,11 @@ main {
 .info-texto {
     font-size: 1rem;
 }
-
+.info-texto-posicao{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+}
 .div-bt {
     display: flex;
     justify-content: center;
@@ -277,6 +287,10 @@ main {
     border-radius: 10% 10% 0 0;
     padding: 1.2em;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.p-menor {
+    font-size: 0.7rem;
 }
 
 .bt-2 {
@@ -370,16 +384,11 @@ main {
 .copy,
 .info,
 .planos-card,
-.planos-beneficios {
+.planos-beneficios,
+.card {
     visibility: hidden;
 }
 
-.card1,
-.card2,
-.card3,
-.card4 {
-    visibility: hidden;
-}
 
 .turbinar {
     margin-top: 10%;
@@ -409,9 +418,6 @@ main {
 .rodape {
     background-color: var(--color-blue-50);
     padding: 4%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
 }
 
 
@@ -457,10 +463,12 @@ main {
     gap: 2.7em;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .texto3 {
     font-weight: bold;
+    cursor: pointer;
 
 }
 
@@ -488,8 +496,6 @@ main {
         font-size: 1em;
     }
 
-
-
     .titulo-menor {
         font-size: 2.7rem;
     }
@@ -501,6 +507,10 @@ main {
         gap: 0.8em;
     }
 
+    .planos {
+        gap: 1.5em;
+    }
+
     .maior {
         width: 75%;
     }
@@ -510,13 +520,289 @@ main {
         font-size: 1.7rem;
     }
 
+    .info-texto {
+        font-size: 1rem;
+    }
 
-    .paragrafos{
+    .p-menor {
+        font-size: 0.9rem;
+    }
+
+    .texto3,
+    .sobre,
+    .paragrafos {
         font-size: 1.2rem;
     }
+}
 
-    .info-texto{
-        font-size: 1;
+@media (min-width:600px) {
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
     }
 
+    .card-img {
+        width: 13em;
+        height: 10em;
+    }
+
+    .texto3,
+    .sobre {
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width:768px) {
+    .media-beneficio {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+
+    .planos {
+        border-radius: 0;
+        box-shadow: none;
+        gap: 1.5em;
+        justify-content: center;
+        background: var(--color-light);
+    }
+
+    .planos-card {
+        border-radius: 10% 10% 0 0;
+    }
+
+    .texto3,
+    .sobre {
+        font-size: 1.6rem;
+    }
+
+    .p-menor {
+        font-size: 1.1rem;
+    }
+
+
+    .info {
+
+        background: var(--color-light);
+        box-shadow: none;
+        gap: 2em;
+        padding: 0.6em;
+    }
+
+    .info-texto {
+        font-size: 1.5em;
+    }
+
+    .inicio-posicionamento {
+        display: flex;
+        gap: 2em;
+        flex-direction: row-reverse;
+    }
+
+    .criatividade{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4em;
+        margin-bottom: 4em;
+    }
+
+    .maior, .bt, .bt-2{
+        font-size: 1.3rem;
+
+    }
+    
+    .cabecalho{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+    .cabecalho-botao{
+        display: none;
+    }
+    .cabecalho-menu{
+        display: block;
+        top: 0;
+        background: none;
+        z-index: 0;
+        position: relative;
+        top: 0;
+        
+    }
+    
+    .menu-nav-lista{
+        display: flex;
+        flex-direction: row;
+        margin-top: 0;
+    }
+    .menu-nav-lista-itens{
+        font-size: 1.3rem;
+    }
+}
+
+
+@media (min-width:1000px){
+    
+    
+    .info{
+        flex-direction: column-reverse;
+    }
+    .info-texto-posicao{
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1em;
+    }
+    
+    .info-texto{
+        font-size: 1.3rem;
+       
+    }
+    
+    .icon{
+        font-size: 2rem;
+    }
+    .maior, .bt, .bt-2{
+        font-size: 1.2rem;
+        width: 50%;
+    }
+    .div-bt{
+       display: flex;
+       align-items: start;
+    }
+
+    .card-img{
+        width: 20em;
+        height: 15em;
+    }
+    .cabecalho-menu{
+        height: 100%;
+        overflow-y: hidden;
+    }
+    .menu-nav-lista{
+        height: 100%;
+    }
+}
+@media (min-width:1200px){  
+    main{
+        padding: 0;
+    }
+    .inicio{
+        margin: 4%;
+        width: auto;
+    }
+    
+    .logo-nome {
+        font-size: 1.8em;
+    }
+
+    .logo-texto {
+        font-size: 1.2em;
+    }
+
+    .titulo-menor {
+        font-size: 3rem;
+    }
+
+    
+
+    .planos {
+        gap: 1.5em;
+    }
+
+    .maior {
+        width: 75%;
+    }
+
+    .subtitulo {
+
+        font-size: 2rem;
+    }
+
+    .info-texto {
+        font-size: 1.5rem;
+        text-wrap: nowrap;
+    }
+    .info-texto-posicao{
+        display: flex;
+       
+    }
+    .p-menor {
+        font-size: 0.9rem;
+    }
+
+    .texto3,
+    .sobre,
+    .paragrafos {
+        font-size: 1.4rem;
+    }
+
+
+    .menu-nav-lista-itens{
+        font-size: 1.5rem;
+    }
+
+    .card-img{
+        width: 15em;
+    }
+    .cards{
+        display: flex;
+        flex-direction: row;
+        margin-top: 5em;
+        margin-bottom: 5em;
+        margin: 4%;
+        width: auto;
+    }
+    .texto2{
+       
+        width: auto;
+        padding: 4%;
+    }
+    .texto{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.8em;
+        
+    }
+  
+    .criatividade{
+        padding: 4%;
+        width: auto;
+    }
+    .media-beneficio{
+        padding: 4%;
+    }
+    .planos-card .preco-card{
+        font-size: 7rem;
+    }
+    .beneficios span{
+        font-size: 1.3rem;
+    }
+    .sobre{
+        font-size:1.7rem;
+    }
+    .p-menor{
+        font-size: 1.3rem;
+    }
+    .planos-card .cifrao{
+        font-size: 1.2rem;
+    }
+    .planos-card{
+        border-radius: 5% 5% 0% 0%;
+    }
+    .planos-beneficios{
+        border-radius: 0% 0% 5% 5%;
+    }
+
+    .planos{
+        gap: 2.5em;
+    }
 }

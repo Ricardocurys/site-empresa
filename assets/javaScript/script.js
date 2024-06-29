@@ -4,7 +4,7 @@ btnMenu.addEventListener('click',function (){
     navMenu.classList.toggle('aparecer')
     btnMenu.classList.toggle('aparecer-botao')
     navMenu.classList.remove('link-clicado')
-})  
+})
 window.sr = ScrollReveal({ reset:true});
 
 sr.reveal('.inicio-img', {duration:500});
@@ -17,11 +17,7 @@ sr.reveal('.planos-beneficios', {duration:1000});
 sr.reveal('.turbinar-img', {duration:500});
 sr.reveal('.rodape', {duration:500});
 sr.reveal('.copy', {duration:1000});
-
-sr.reveal('.card1', {duration: 1000});
-sr.reveal('.card2', {duration: 1000});
-sr.reveal('.card3', {duration: 1000});
-sr.reveal('.card4', {duration: 1000});
+sr.reveal('.card', {duration: 1000});
 
 
 const menuItems = document.querySelectorAll('.menu-nav-lista-itens');
